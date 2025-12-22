@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensors | OpenSense</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">OpenSense</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="sensors.html" class="active">Sensors</a>
+                    <div class="dropdown-content">
+                        <a href="#lidar">LiDAR</a>
+                        <a href="#ultrasonic">Ultrasonic</a>
+                        <a href="#water-quality">Water Quality</a>
+                        <a href="#moisture">Moisture</a>
+                    </div>
+                </li>
+                <li><a href="science.html">Science</a></li>
+                <li><a href="consultancy.html">Consultancy</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <span class="page-label">Technology</span>
+            <h1>Our Sensor Platform</h1>
+            <p class="page-intro">Research-grade environmental monitoring sensors built on open-source principles. Each sensor is designed for reliability, accuracy, and ease of deployment in the field.</p>
+        </div>
+    </section>
+
+    <section id="lidar" class="sensor-detail">
+        <div class="container">
+            <div class="sensor-detail-grid">
+                <div class="sensor-detail-content">
+                    <div class="sensor-badge">📡 LiDAR</div>
+                    <h2>Light Detection and Ranging</h2>
+                    <p class="lead">Our LiDAR sensors provide millimeter-precision distance measurement and topographic mapping for flood monitoring, terrain analysis, and infrastructure assessment.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li><strong>Range:</strong> 0.1m to 40m with ±5mm accuracy</li>
+                        <li><strong>Sampling Rate:</strong> Up to 100Hz for dynamic monitoring</li>
+                        <li><strong>Weather Resistant:</strong> IP67 rated for harsh conditions</li>
+                        <li><strong>Power Efficient:</strong> Solar-compatible with <1W consumption</li>
+                    </ul>
+
+                    <h3>Applications</h3>
+                    <ul class="application-list">
+                        <li>River stage and flood level monitoring</li>
+                        <li>Bridge scour and erosion detection</li>
+                        <li>Snow depth measurement</li>
+                        <li>Coastal cliff recession studies</li>
+                    </ul>
+
+                    <div class="sensor-specs">
+                        <h3>Technical Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Laser Class</span>
+                                <span class="spec-value">Class 1 (Eye-safe)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Operating Temp</span>
+                                <span class="spec-value">-40°C to +60°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Output</span>
+                                <span class="spec-value">I2C, UART, USB</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cost</span>
+                                <span class="spec-value">~$150 (DIY kit)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sensor-visual">
+                    <div class="sensor-illustration lidar-bg">
+                        <div class="data-stream"></div>
+                        <div class="pulse-effect"></div>
+                    </div>
+                    <a href="#" class="download-link">📄 Download Datasheet</a>
+                    <a href="#" class="download-link">⚙️ View GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ultrasonic" class="sensor-detail alternate">
+        <div class="container">
+            <div class="sensor-detail-grid">
+                <div class="sensor-visual">
+                    <div class="sensor-illustration ultrasonic-bg">
+                        <div class="wave-pulse"></div>
+                    </div>
+                    <a href="#" class="download-link">📄 Download Datasheet</a>
+                    <a href="#" class="download-link">⚙️ View GitHub Repo</a>
+                </div>
+                <div class="sensor-detail-content">
+                    <div class="sensor-badge">🔊 Ultrasonic</div>
+                    <h2>Ultrasonic Distance Sensors</h2>
+                    <p class="lead">Cost-effective and reliable distance measurement using ultrasonic waves, ideal for water level monitoring in rivers, tanks, and wells.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li><strong>Range:</strong> 0.3m to 10m with ±1cm accuracy</li>
+                        <li><strong>Beam Angle:</strong> 15° for focused measurement</li>
+                        <li><strong>Weatherproof:</strong> IP65 rated enclosure</li>
+                        <li><strong>Low Cost:</strong> Most affordable sensor option</li>
+                    </ul>
+
+                    <h3>Applications</h3>
+                    <ul class="application-list">
+                        <li>Stream and river gauge stations</li>
+                        <li>Water tank level monitoring</li>
+                        <li>Tide gauge systems</li>
+                        <li>Irrigation canal management</li>
+                    </ul>
+
+                    <div class="sensor-specs">
+                        <h3>Technical Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Frequency</span>
+                                <span class="spec-value">40 kHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Operating Temp</span>
+                                <span class="spec-value">-15°C to +70°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Output</span>
+                                <span class="spec-value">Digital/Analog</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cost</span>
+                                <span class="spec-value">~$30 (DIY kit)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="water-quality" class="sensor-detail">
+        <div class="container">
+            <div class="sensor-detail-grid">
+                <div class="sensor-detail-content">
+                    <div class="sensor-badge">🧪 Water Quality</div>
+                    <h2>Multi-Parameter Water Quality</h2>
+                    <p class="lead">Comprehensive water quality monitoring system measuring pH, conductivity, turbidity, dissolved oxygen, and temperature in a single robust platform.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li><strong>Parameters:</strong> pH, EC, DO, turbidity, temperature</li>
+                        <li><strong>Accuracy:</strong> Laboratory-grade calibration</li>
+                        <li><strong>Deployment:</strong> Submersible up to 50m depth</li>
+                        <li><strong>Logging:</strong> Onboard SD card storage</li>
+                    </ul>
+
+                    <h3>Applications</h3>
+                    <ul class="application-list">
+                        <li>Stream health monitoring</li>
+                        <li>Wastewater treatment oversight</li>
+                        <li>Lake and reservoir management</li>
+                        <li>Agricultural runoff studies</li>
+                        <li>Coastal water quality assessment</li>
+                    </ul>
+
+                    <div class="sensor-specs">
+                        <h3>Technical Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">pH Range</span>
+                                <span class="spec-value">0-14 (±0.1 pH)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">DO Range</span>
+                                <span class="spec-value">0-20 mg/L</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Power</span>
+                                <span class="spec-value">3.3-5V DC</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cost</span>
+                                <span class="spec-value">~$400 (DIY kit)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sensor-visual">
+                    <div class="sensor-illustration water-bg">
+                        <div class="ripple-effect"></div>
+                    </div>
+                    <a href="#" class="download-link">📄 Download Datasheet</a>
+                    <a href="#" class="download-link">⚙️ View GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="moisture" class="sensor-detail alternate">
+        <div class="container">
+            <div class="sensor-detail-grid">
+                <div class="sensor-visual">
+                    <div class="sensor-illustration moisture-bg">
+                        <div class="moisture-indicator"></div>
+                    </div>
+                    <a href="#" class="download-link">📄 Download Datasheet</a>
+                    <a href="#" class="download-link">⚙️ View GitHub Repo</a>
+                </div>
+                <div class="sensor-detail-content">
+                    <div class="sensor-badge">🌱 Moisture</div>
+                    <h2>Soil Moisture Sensors</h2>
+                    <p class="lead">Precision capacitance-based moisture sensors for agriculture, ecology research, and landslide risk assessment across various soil types.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li><strong>Range:</strong> 0-100% volumetric water content</li>
+                        <li><strong>Technology:</strong> Capacitance (no corrosion)</li>
+                        <li><strong>Multi-depth:</strong> Profile arrays available</li>
+                        <li><strong>Calibration:</strong> Soil-type specific</li>
+                    </ul>
+
+                    <h3>Applications</h3>
+                    <ul class="application-list">
+                        <li>Precision agriculture and irrigation</li>
+                        <li>Landslide early warning systems</li>
+                        <li>Wetland hydrology studies</li>
+                        <li>Green infrastructure monitoring</li>
+                        <li>Erosion and soil stability research</li>
+                    </ul>
+
+                    <div class="sensor-specs">
+                        <h3>Technical Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Accuracy</span>
+                                <span class="spec-value">±2% VWC</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Depth</span>
+                                <span class="spec-value">Up to 1.5m</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Output</span>
+                                <span class="spec-value">SDI-12, analog</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cost</span>
+                                <span class="spec-value">~$45 (DIY kit)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need Help Choosing Sensors?</h2>
+            <p>Our team can help you design the right monitoring system for your project</p>
+            <a href="consultancy.html" class="cta-button">Get Expert Advice</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>OpenSense</h4>
+                    <p>Open-source environmental monitoring for a changing world</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="sensors.html">Sensors</a></li>
+                        <li><a href="science.html">Science</a></li>
+                        <li><a href="consultancy.html">Consultancy</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com">GitHub</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 OpenSense. Released under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

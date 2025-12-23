@@ -1,20 +1,27 @@
-/* OpenSense - Environmental Monitoring Website Styles */
+/* Riverlabs - Environmental Monitoring Website Styles */
 
 :root {
-    /* Color Palette - Water-inspired with technical precision */
-    --primary-deep: #0A3D62;
-    --primary-ocean: #1B6B93;
-    --primary-flow: #2E8FAA;
-    --accent-teal: #4ECDC4;
-    --accent-coral: #FF6B6B;
-    --accent-lime: #95E1D3;
+    /* Riverlabs Brand Colors */
+    --primary-deep: #005262;      /* Dark teal - c100 m35 y35 k45 */
+    --primary-bright: #00aab5;    /* Bright cyan - c100 m0 y35 k0 */
+    --primary-light: #8ccfb7;     /* Light mint - c45 m0 y35 k0 */
+    
+    /* Supporting colors derived from brand palette */
+    --primary-ocean: #007282;     /* Midtone between deep and bright */
+    --accent-teal: #00aab5;       /* Using bright cyan as accent */
+    --accent-mint: #8ccfb7;       /* Light mint for highlights */
+    --accent-coral: #FF6B6B;      /* Kept for alerts/special emphasis */
+    
+    /* Neutral colors */
     --neutral-dark: #1A1A2E;
     --neutral-charcoal: #2D2D44;
     --neutral-gray: #5F5F7A;
     --neutral-light: #E8EEF2;
     --neutral-white: #FAFBFC;
-    --gradient-water: linear-gradient(135deg, #0A3D62 0%, #2E8FAA 50%, #4ECDC4 100%);
-    --gradient-depth: linear-gradient(180deg, rgba(10, 61, 98, 0.95) 0%, rgba(46, 143, 170, 0.85) 100%);
+    
+    /* Gradients using brand colors */
+    --gradient-water: linear-gradient(135deg, #005262 0%, #007282 50%, #00aab5 100%);
+    --gradient-depth: linear-gradient(180deg, rgba(0, 82, 98, 0.95) 0%, rgba(0, 170, 181, 0.85) 100%);
     
     /* Typography */
     --font-display: 'Literata', serif;

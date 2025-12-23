@@ -1,11 +1,43 @@
-# OpenSense Website
+# Riverlabs Website
 
-A professional, distinctive website for open-source environmental monitoring sensors and hydrology consultancy.
+A professional website for Riverlabs Ltd - environmental monitoring solutions from Imperial College London research.
+
+## About Riverlabs
+
+Riverlabs Ltd (formerly Riverflow.io) was founded to commercialize the sensor network technologies and expertise developed by Dr Wouter Buytaert and his research team at Imperial College London. We provide services for the design, production, and implementation of bespoke solutions to monitor environmental variables such as river flow, precipitation, soil moisture, and air temperature.
+
+## Brand Colors
+
+The website uses Riverlabs' three key brand colors:
+
+- **Dark Teal**: `#005262` (CMYK: c100 m35 y35 k45, RGB: 0, 82, 98)
+- **Bright Cyan**: `#00aab5` (CMYK: c100 m0 y35 k0, RGB: 0, 170, 181)
+- **Light Mint**: `#8ccfb7` (CMYK: c45 m0 y35 k0, RGB: 140, 207, 183)
+
+## Adding Your Logo
+
+1. Place your logo file in the `/images` folder (e.g., `riverlabs-logo.svg` or `riverlabs-logo.png`)
+2. Recommended formats: SVG (best for scaling), PNG with transparent background
+3. Update the navbar logo in all HTML files (index.html, about.html, sensors.html, science.html, consultancy.html):
+
+Replace this line:
+```html
+<a href="index.html" class="logo">Riverlabs</a>
+```
+
+With:
+```html
+<a href="index.html" class="logo">
+    <img src="images/riverlabs-logo.svg" alt="Riverlabs" height="40">
+</a>
+```
+
+Or keep the text-based logo and customize it further in `styles.css`.
 
 ## Features
 
 - **Responsive Design**: Works beautifully on desktop, tablet, and mobile
-- **Water-Inspired Aesthetic**: Unique color palette and flowing design elements
+- **Brand-Aligned Colors**: Using Riverlabs' official color palette (#005262, #00aab5, #8ccfb7)
 - **Professional Typography**: Literata serif paired with Space Mono monospace
 - **Smooth Animations**: Subtle transitions and effects throughout
 - **Five Complete Pages**:
@@ -13,7 +45,24 @@ A professional, distinctive website for open-source environmental monitoring sen
   - Sensors - Detailed specs for LiDAR, ultrasonic, water quality, and moisture sensors
   - Science - Research methodology and publications
   - Consultancy - Services and case studies
-  - About - Team and organizational information
+  - About - Real team members with LinkedIn profiles
+
+## Logo Setup
+
+To add the Riverlabs logo:
+
+1. Place your logo file (e.g., `riverlabs-logo.png` or `riverlabs-logo.svg`) in the `/images` folder
+2. Update the navbar logo in all HTML files by replacing:
+   ```html
+   <a href="index.html" class="logo">Riverlabs</a>
+   ```
+   with:
+   ```html
+   <a href="index.html" class="logo">
+       <img src="images/riverlabs-logo.png" alt="Riverlabs" height="40">
+   </a>
+   ```
+3. Adjust the height attribute as needed for your logo
 
 ## Quick Start
 

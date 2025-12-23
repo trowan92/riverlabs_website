@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Literata:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-          <a href="index.html" class="logo"> <img src="images/riverlabs-logo.svg" alt="Riverlabs" height="40"></a>
+          <a href="index.html" class="logo"> <img src="images/riverlabs-logo.svg" alt="Riverlabs" height="60"></a>
               <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
@@ -20,8 +20,7 @@
                     <div class="dropdown-content">
                         <a href="#lidar">LiDAR</a>
                         <a href="#ultrasonic">Ultrasonic</a>
-                        <a href="#water-quality">Water Quality</a>
-                        <a href="#moisture">Moisture</a>
+                        <a href="#water-quality">Water Quality Buoy</a>
                     </div>
                 </li>
                 <li><a href="science.html">Science</a></li>
@@ -44,15 +43,17 @@
             <div class="sensor-detail-grid">
                 <div class="sensor-detail-content">
                     <div class="sensor-badge">📡 LiDAR</div>
-                    <h2>Light Detection and Ranging</h2>
-                    <p class="lead">Our LiDAR sensors provide millimeter-precision distance measurement and topographic mapping for flood monitoring, terrain analysis, and infrastructure assessment.</p>
+                    <h2>LiDAR Distance Sensor</h2>
+                    <p class="lead">High-precision distance measurement using Garmin Lidarlite v3HP sensor with multiple connectivity options for diverse deployment scenarios.</p>
                     
                     <h3>Key Features</h3>
                     <ul class="feature-list">
-                        <li><strong>Range:</strong> 0.1m to 40m with ±5mm accuracy</li>
-                        <li><strong>Sampling Rate:</strong> Up to 100Hz for dynamic monitoring</li>
-                        <li><strong>Weather Resistant:</strong> IP67 rated for harsh conditions</li>
-                        <li><strong>Power Efficient:</strong> Solar-compatible with <1W consumption</li>
+                        <li><strong>Sensor:</strong> Garmin Lidarlite v3HP</li>
+                        <li><strong>Range:</strong> Up to 35m (depending on target reflectivity)</li>
+                        <li><strong>Precision:</strong> 1 cm</li>
+                        <li><strong>Accuracy:</strong> ~5 cm</li>
+                        <li><strong>Solar-powered:</strong> 2W solar panel (3G/4G/5G options)</li>
+                        <li><strong>Battery:</strong> Lithium-ion 18650 (14500 for 5G option)</li>
                     </ul>
 
                     <h3>Applications</h3>
@@ -60,38 +61,44 @@
                         <li>River stage and flood level monitoring</li>
                         <li>Bridge scour and erosion detection</li>
                         <li>Snow depth measurement</li>
-                        <li>Coastal cliff recession studies</li>
+                        <li>Infrastructure monitoring</li>
+                    </ul>
+
+                    <h3>Configuration Options</h3>
+                    <ul class="application-list">
+                        <li>SD card storage only</li>
+                        <li>With LoRA radio module</li>
+                        <li>With 3G modem</li>
+                        <li>With 4G NB-IoT/LTE-M modem</li>
+                        <li>With 5G modem</li>
                     </ul>
 
                     <div class="sensor-specs">
                         <h3>Technical Specifications</h3>
                         <div class="specs-grid">
                             <div class="spec-item">
-                                <span class="spec-label">Laser Class</span>
-                                <span class="spec-value">Class 1 (Eye-safe)</span>
+                                <span class="spec-label">Microprocessor</span>
+                                <span class="spec-value">Atmega328P (Arduino compatible)</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-label">Operating Temp</span>
-                                <span class="spec-value">-40°C to +60°C</span>
+                                <span class="spec-label">Memory</span>
+                                <span class="spec-value">512 KB EEPROM, 64 MB Flash</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-label">Output</span>
-                                <span class="spec-value">I2C, UART, USB</span>
+                                <span class="spec-label">Storage</span>
+                                <span class="spec-value">SD card slot</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-label">Cost</span>
-                                <span class="spec-value">~$150 (DIY kit)</span>
+                                <span class="spec-label">Price</span>
+                                <span class="spec-value">Upon Application</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="sensor-visual">
-                    <div class="sensor-illustration lidar-bg">
-                        <div class="data-stream"></div>
-                        <div class="pulse-effect"></div>
-                    </div>
+                    <img src="images/Lidar.png" alt="LiDAR Sensor" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
                     <a href="#" class="download-link">📄 Download Datasheet</a>
-                    <a href="#" class="download-link">⚙️ View GitHub Repo</a>
+                    <a href="#" class="download-link">📧 Request Quote</a>
                 </div>
             </div>
         </div>
@@ -101,23 +108,23 @@
         <div class="container">
             <div class="sensor-detail-grid">
                 <div class="sensor-visual">
-                    <div class="sensor-illustration ultrasonic-bg">
-                        <div class="wave-pulse"></div>
-                    </div>
+                    <img src="images/Ultrasonic.png" alt="Ultrasonic Sensor" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
                     <a href="#" class="download-link">📄 Download Datasheet</a>
-                    <a href="#" class="download-link">⚙️ View GitHub Repo</a>
+                    <a href="#" class="download-link">📧 Request Quote</a>
                 </div>
                 <div class="sensor-detail-content">
                     <div class="sensor-badge">🔊 Ultrasonic</div>
-                    <h2>Ultrasonic Distance Sensors</h2>
-                    <p class="lead">Cost-effective and reliable distance measurement using ultrasonic waves, ideal for water level monitoring in rivers, tanks, and wells.</p>
+                    <h2>Ultrasonic Distance Sensor</h2>
+                    <p class="lead">Reliable and accurate distance measurement using Maxbotix MB7389 ultrasound sensor with flexible connectivity options.</p>
                     
                     <h3>Key Features</h3>
                     <ul class="feature-list">
-                        <li><strong>Range:</strong> 0.3m to 10m with ±1cm accuracy</li>
-                        <li><strong>Beam Angle:</strong> 15° for focused measurement</li>
-                        <li><strong>Weatherproof:</strong> IP65 rated enclosure</li>
-                        <li><strong>Low Cost:</strong> Most affordable sensor option</li>
+                        <li><strong>Sensor:</strong> Maxbotix MB7389</li>
+                        <li><strong>Range:</strong> 0.3 - 5 m</li>
+                        <li><strong>Precision:</strong> 1 mm</li>
+                        <li><strong>Accuracy:</strong> ~5 mm</li>
+                        <li><strong>Solar-powered:</strong> 2W solar panel (3G/4G/5G options)</li>
+                        <li><strong>Battery:</strong> Lithium-ion 18650 (14500 for 5G option)</li>
                     </ul>
 
                     <h3>Applications</h3>
@@ -128,24 +135,33 @@
                         <li>Irrigation canal management</li>
                     </ul>
 
+                    <h3>Configuration Options</h3>
+                    <ul class="application-list">
+                        <li>SD card storage only</li>
+                        <li>With LoRA radio module</li>
+                        <li>With 3G modem</li>
+                        <li>With 4G NB-IoT/LTE-M modem</li>
+                        <li>With 5G modem</li>
+                    </ul>
+
                     <div class="sensor-specs">
                         <h3>Technical Specifications</h3>
                         <div class="specs-grid">
                             <div class="spec-item">
-                                <span class="spec-label">Frequency</span>
-                                <span class="spec-value">40 kHz</span>
+                                <span class="spec-label">Microprocessor</span>
+                                <span class="spec-value">Atmega328P (Arduino compatible)</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-label">Operating Temp</span>
-                                <span class="spec-value">-15°C to +70°C</span>
+                                <span class="spec-label">Memory</span>
+                                <span class="spec-value">512 KB EEPROM, 64 MB Flash</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-label">Output</span>
-                                <span class="spec-value">Digital/Analog</span>
+                                <span class="spec-label">Storage</span>
+                                <span class="spec-value">SD card slot</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-label">Cost</span>
-                                <span class="spec-value">~$30 (DIY kit)</span>
+                                <span class="spec-label">Price</span>
+                                <span class="spec-value">Upon Application</span>
                             </div>
                         </div>
                     </div>
@@ -159,112 +175,60 @@
             <div class="sensor-detail-grid">
                 <div class="sensor-detail-content">
                     <div class="sensor-badge">🧪 Water Quality</div>
-                    <h2>Multi-Parameter Water Quality</h2>
-                    <p class="lead">Comprehensive water quality monitoring system measuring pH, conductivity, turbidity, dissolved oxygen, and temperature in a single robust platform.</p>
+                    <h2>Wari Water Quality Buoy</h2>
+                    <p class="lead">Self-righting floating buoy for continuous water quality monitoring with turbidity, temperature, and electrical conductivity sensors.</p>
                     
                     <h3>Key Features</h3>
                     <ul class="feature-list">
-                        <li><strong>Parameters:</strong> pH, EC, DO, turbidity, temperature</li>
-                        <li><strong>Accuracy:</strong> Laboratory-grade calibration</li>
-                        <li><strong>Deployment:</strong> Submersible up to 50m depth</li>
-                        <li><strong>Logging:</strong> Onboard SD card storage</li>
+                        <li><strong>Turbidity:</strong> 0-4000 NTU (Precision: 5 NTU, Accuracy: ±10%)</li>
+                        <li><strong>Temperature:</strong> -55-315°C (Precision: 0.1°C, Accuracy: ±1%)</li>
+                        <li><strong>FEC:</strong> 0-2000 µS/cm (Precision: 2 µS/cm, Accuracy: ±10%)</li>
+                        <li><strong>Design:</strong> Self-righting with closed-cell Neoprene seal</li>
+                        <li><strong>Battery:</strong> Lithium-ion 15500 battery slot</li>
+                        <li><strong>Deployment:</strong> Single hitching point</li>
                     </ul>
 
                     <h3>Applications</h3>
                     <ul class="application-list">
-                        <li>Stream health monitoring</li>
+                        <li>Lake and reservoir monitoring</li>
+                        <li>River water quality assessment</li>
                         <li>Wastewater treatment oversight</li>
-                        <li>Lake and reservoir management</li>
                         <li>Agricultural runoff studies</li>
-                        <li>Coastal water quality assessment</li>
+                        <li>Coastal water quality monitoring</li>
                     </ul>
 
-                    <div class="sensor-specs">
-                        <h3>Technical Specifications</h3>
-                        <div class="specs-grid">
-                            <div class="spec-item">
-                                <span class="spec-label">pH Range</span>
-                                <span class="spec-value">0-14 (±0.1 pH)</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">DO Range</span>
-                                <span class="spec-value">0-20 mg/L</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Power</span>
-                                <span class="spec-value">3.3-5V DC</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Cost</span>
-                                <span class="spec-value">~$400 (DIY kit)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sensor-visual">
-                    <div class="sensor-illustration water-bg">
-                        <div class="ripple-effect"></div>
-                    </div>
-                    <a href="#" class="download-link">📄 Download Datasheet</a>
-                    <a href="#" class="download-link">⚙️ View GitHub Repo</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="moisture" class="sensor-detail alternate">
-        <div class="container">
-            <div class="sensor-detail-grid">
-                <div class="sensor-visual">
-                    <div class="sensor-illustration moisture-bg">
-                        <div class="moisture-indicator"></div>
-                    </div>
-                    <a href="#" class="download-link">📄 Download Datasheet</a>
-                    <a href="#" class="download-link">⚙️ View GitHub Repo</a>
-                </div>
-                <div class="sensor-detail-content">
-                    <div class="sensor-badge">🌱 Moisture</div>
-                    <h2>Soil Moisture Sensors</h2>
-                    <p class="lead">Precision capacitance-based moisture sensors for agriculture, ecology research, and landslide risk assessment across various soil types.</p>
-                    
-                    <h3>Key Features</h3>
-                    <ul class="feature-list">
-                        <li><strong>Range:</strong> 0-100% volumetric water content</li>
-                        <li><strong>Technology:</strong> Capacitance (no corrosion)</li>
-                        <li><strong>Multi-depth:</strong> Profile arrays available</li>
-                        <li><strong>Calibration:</strong> Soil-type specific</li>
-                    </ul>
-
-                    <h3>Applications</h3>
+                    <h3>Configuration Options</h3>
                     <ul class="application-list">
-                        <li>Precision agriculture and irrigation</li>
-                        <li>Landslide early warning systems</li>
-                        <li>Wetland hydrology studies</li>
-                        <li>Green infrastructure monitoring</li>
-                        <li>Erosion and soil stability research</li>
+                        <li>Internal storage only</li>
+                        <li>With LoRA radio module</li>
                     </ul>
 
                     <div class="sensor-specs">
                         <h3>Technical Specifications</h3>
                         <div class="specs-grid">
                             <div class="spec-item">
-                                <span class="spec-label">Accuracy</span>
-                                <span class="spec-value">±2% VWC</span>
+                                <span class="spec-label">Microprocessor</span>
+                                <span class="spec-value">Atmega328P (Arduino compatible)</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-label">Depth</span>
-                                <span class="spec-value">Up to 1.5m</span>
+                                <span class="spec-label">Memory</span>
+                                <span class="spec-value">512 KB EEPROM, 64 MB Flash</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-label">Output</span>
-                                <span class="spec-value">SDI-12, analog</span>
+                                <span class="spec-label">Clock</span>
+                                <span class="spec-value">Internal high-precision</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-label">Cost</span>
-                                <span class="spec-value">~$45 (DIY kit)</span>
+                                <span class="spec-label">Price</span>
+                                <span class="spec-value">Upon Application</span>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="sensor-visual">
+                    <img src="images/bouy.png" alt="Wari Water Quality Buoy" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+                    <a href="#" class="download-link">📄 Download Datasheet</a>
+                    <a href="#" class="download-link">📧 Request Quote</a>
                 </div>
             </div>
         </div>

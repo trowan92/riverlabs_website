@@ -24,7 +24,7 @@
     --gradient-depth: linear-gradient(180deg, rgba(0, 82, 98, 0.95) 0%, rgba(0, 170, 181, 0.85) 100%);
     
     /* Typography */
-    --font-display: 'Literata', serif;
+    --font-display: 'Karla', sans-serif;
     --font-mono: 'Space Mono', monospace;
     
     /* Spacing */

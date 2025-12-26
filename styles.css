@@ -951,6 +951,22 @@ a:hover {
     color: var(--neutral-gray);
 }
 
+.case-link {
+    display: inline-block;
+    margin-top: var(--space-md);
+    color: var(--accent-teal);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.case-link:hover {
+    color: var(--primary-deep);
+    transform: translateX(5px);
+}
+
 .process {
     padding: var(--space-xl) 0;
     background: var(--neutral-light);

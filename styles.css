@@ -695,11 +695,43 @@ a:hover {
     font-size: 0.9rem;
     text-align: center;
     transition: var(--transition-smooth);
+    margin-top: 0.5rem;
 }
 
 .download-link:hover {
     background: var(--accent-teal);
     color: white;
+}
+
+.download-link-half {
+    display: block;
+    padding: var(--space-sm);
+    background: white;
+    border: 2px solid var(--accent-teal);
+    border-radius: 6px;
+    color: var(--primary-ocean);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    text-align: center;
+    transition: var(--transition-smooth);
+    flex: 1;
+}
+
+.download-link-half:hover {
+    background: var(--accent-teal);
+    color: white;
+}
+
+.request-quote-btn {
+    background: linear-gradient(135deg, #00aab5 0%, #8ccfb7 100%);
+    color: white;
+    border: 2px solid #8ccfb7;
+}
+
+.request-quote-btn:hover {
+    background: linear-gradient(135deg, #8ccfb7 0%, white 100%);
+    color: var(--primary-ocean);
+    border: 2px solid #00aab5;
 }
 
 /* Science Page */

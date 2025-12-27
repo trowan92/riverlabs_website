@@ -1,0 +1,37 @@
+<svg width="300" height="150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="150" fill="#2c3e50" rx="10"/>
+  
+  <!-- Title -->
+  <text x="150" y="25" text-anchor="middle" fill="#3498db" font-family="Arial, sans-serif" font-size="16" font-weight="bold">FDRI PROJECT PARTNERS</text>
+  
+  <!-- Partner logos placeholder boxes -->
+  <rect x="20" y="40" width="50" height="30" fill="#34495e" rx="4"/>
+  <text x="45" y="58" text-anchor="middle" fill="#bdc3c7" font-family="Arial, sans-serif" font-size="8">UoB</text>
+  
+  <rect x="80" y="40" width="50" height="30" fill="#34495e" rx="4"/>
+  <text x="105" y="58" text-anchor="middle" fill="#bdc3c7" font-family="Arial, sans-serif" font-size="8">CEH</text>
+  
+  <rect x="140" y="40" width="50" height="30" fill="#34495e" rx="4"/>
+  <text x="165" y="58" text-anchor="middle" fill="#bdc3c7" font-family="Arial, sans-serif" font-size="8">EA</text>
+  
+  <rect x="200" y="40" width="50" height="30" fill="#34495e" rx="4"/>
+  <text x="225" y="58" text-anchor="middle" fill="#bdc3c7" font-family="Arial, sans-serif" font-size="8">Oxford</text>
+  
+  <rect x="260" y="40" width="30" height="30" fill="#34495e" rx="4"/>
+  <text x="275" y="58" text-anchor="middle" fill="#bdc3c7" font-family="Arial, sans-serif" font-size="7">+</text>
+  
+  <!-- Bottom row -->
+  <rect x="50" y="80" width="50" height="30" fill="#34495e" rx="4"/>
+  <text x="75" y="98" text-anchor="middle" fill="#bdc3c7" font-family="Arial, sans-serif" font-size="8">Bristol</text>
+  
+  <rect x="110" y="80" width="50" height="30" fill="#34495e" rx="4"/>
+  <text x="135" y="98" text-anchor="middle" fill="#bdc3c7" font-family="Arial, sans-serif" font-size="8">SEPA</text>
+  
+  <rect x="170" y="80" width="50" height="30" fill="#34495e" rx="4"/>
+  <text x="195" y="98" text-anchor="middle" fill="#bdc3c7" font-family="Arial, sans-serif" font-size="7">Stroud</text>
+  
+  <!-- Footer text -->
+  <text x="150" y="130" text-anchor="middle" fill="#95a5a6" font-family="Arial, sans-serif" font-size="11">Collaborative Research Network</text>
+  <text x="150" y="145" text-anchor="middle" fill="#95a5a6" font-family="Arial, sans-serif" font-size="11">15+ Partner Institutions</text>
+</svg>

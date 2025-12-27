@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="200" height="200" viewBox="0, 0, 200, 200">
+  <g id="Background">
+    <rect x="0" y="0" width="200" height="200" fill="#FFFFFF"/>
+  </g>
+  <g id="Layer_1">
+    <path d="M77,139.5 C41.93,139.5 13.5,111.07 13.5,76 C13.5,40.93 41.93,12.5 77,12.5 C112.07,12.5 140.5,40.93 140.5,76 C140.5,111.07 112.07,139.5 77,139.5 z" fill-opacity="0" stroke="#016576" stroke-width="12"/>
+    <path d="M120.433,121.116 L186.5,187.183" fill-opacity="0" stroke="#016576" stroke-width="8"/>
+    <path d="M137.243,138.511 L185.134,185.769" fill-opacity="0" stroke="#016576" stroke-width="20" stroke-linecap="round"/>
+    <path d="M101.679,53.828 L119.489,53.828" fill-opacity="0" stroke="#016576" stroke-width="8" stroke-linecap="round"/>
+    <path d="M101.679,78.567 L125.649,78.567" fill-opacity="0" stroke="#016576" stroke-width="8" stroke-linecap="round"/>
+    <path d="M101.679,102.672 L119.907,102.672" fill-opacity="0" stroke="#016576" stroke-width="8" stroke-linecap="round"/>
+    <path d="M66.795,40.911 C95.58,94.095 76.44,105.609 64.328,105.609 C52.215,105.609 31.704,89.435 65.699,42.556 z" fill-opacity="0" stroke="#016576" stroke-width="8"/>
+  </g>
+</svg>

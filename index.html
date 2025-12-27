@@ -32,7 +32,15 @@
     </nav>
 
     <section class="hero">
-        <div class="hero-background"></div>
+        <div class="hero-slideshow">
+            <div class="hero-slide" style="background-image: url('images/Full_pics/2019_peru.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/Full_pics/2023_bolivia.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/Full_pics/header-bg.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/Full_pics/header-bg3.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/Full_pics/hydroflux.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/Full_pics/landslide_bg.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/Full_pics/tienshan.jpg');"></div>
+        </div>
         <div class="hero-content">
             <h1 class="hero-title">Environmental Monitoring<br>Solutions</h1>
             <p class="hero-subtitle">Sensor network technologies from Imperial College London for comprehensive environmental monitoring</p>
@@ -53,21 +61,21 @@
             <div class="mission-grid">
                 <div class="mission-card">
                      <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div class="card-icon"><img src="icons/WATER_RESEARCH_COLOR.svg" alt="Research Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
+                        <div class="card-icon"><img src="icons/WATER_RESEARCH_COLOR.svg" alt="Research Icon" style="width: 48px; height: 48px; "></div>
                         <h3 style="margin: 0;">Research Led Technology</h3>
                     </div>
                     <p>Commercializing sensor network technologies and expertise developed by Dr Wouter Buytaert and his research team at Imperial College London.</p>
                 </div>
                 <div class="mission-card">
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div class="card-icon"><img src="icons/OPENSOURCE_LOGO.svg" alt="Open Source Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
+                        <div class="card-icon"><img src="icons/OPENSOURCE_LOGO.svg" alt="Open Source Icon" style="width: 48px; height: 48px; "></div>
                         <h3 style="margin: 0;">Opensouce Hardware</h3>
                     </div>
                     <p>Design, production, and implementation of bespoke solutions to monitor river flow, precipitation, soil moisture, and water quality.</p>
                 </div>
                 <div class="mission-card">
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div class="card-icon"><img src="icons/Clipboard_Color.png" alt="Research Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
+                        <div class="card-icon"><img src="icons/Clipboard_Color.svg" alt="Research Icon" style="width: 48px; height: 48px;"></div>
                         <h3 style="margin: 0;">Proven in the Field</h3>
                     </div>
                     <p>Commercializing sensor network technologies and expertise developed by Dr Wouter Buytaert and his research team at Imperial College London.</p>
@@ -85,7 +93,7 @@
             <div class="sensors-grid">
                 <a href="sensors.html#lidar" class="sensor-card lidar-card">
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div class="sensor-icon"><img src="icons/Lidar.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
+                        <div class="sensor-icon"><img src="icons/Lidar.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; "></div>
                         <h3 style="margin: 0;">LiDAR</h3>
                     </div>
                     <p>High-precision distance measurement with Garmin Lidarlite v3HP sensor up to 35m range</p>
@@ -93,7 +101,7 @@
                 </a>
                 <a href="sensors.html#ultrasonic" class="sensor-card ultrasonic-card">
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div class="sensor-icon"><img src="icons/Ultrasonic.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
+                        <div class="sensor-icon"><img src="icons/Ultrasonic.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; "></div>
                         <h3 style="margin: 0;">Ultrasonic</h3>
                     </div>
                     <p>Reliable water level measurement with Maxbotix MB7389 sensor for rivers and streams</p>
@@ -101,7 +109,7 @@
                 </a>
                 <a href="sensors.html#water-quality" class="sensor-card water-card">
                     <div style="display: flex; align-items: center; gap: 1rem;">
-                        <div class="sensor-icon"><img src="icons/WQ_Bouy.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
+                        <div class="sensor-icon"><img src="icons/WQ_Bouy.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; "></div>
                         <h3 style="margin: 0;">Quality Buoy</h3>
                     </div>
                     <p>Self-righting buoy monitoring turbidity, temperature, and electrical conductivity</p>
@@ -187,5 +195,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Hero slideshow functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const totalSlides = slides.length;
+
+        // Show first slide
+        slides[0].classList.add('active');
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Change slide every 5 seconds
+        setInterval(nextSlide, 5000);
+    </script>
 </body>
 </html>

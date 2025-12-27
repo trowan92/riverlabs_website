@@ -25,7 +25,7 @@
     
     /* Typography */
     --font-display: 'Karla', sans-serif;
-    --font-mono: 'Space Mono', monospace;
+    --font-mono: 'karla', monospace;
     
     /* Spacing */
     --space-xs: 0.5rem;

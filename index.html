@@ -9,28 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo"> <img src="images/riverlabs-logo.svg" alt="Riverlabs" height="60"></a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li class="dropdown">
-                    <a href="sensors.html">Sensors</a>
-                    <div class="dropdown-content">
-                        <a href="sensors.html#lidar">LiDAR</a>
-                        <a href="sensors.html#ultrasonic">Ultrasonic</a>
-                        <a href="sensors.html#water-quality">Water Quality Buoy</a>
-                    </div>
-                </li>
-                <li><a href="science.html">Science</a></li>
-                <li><a href="consultancy.html">Consultancy</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-    </nav>
-
+    
     <section class="hero">
         <div class="hero-slideshow">
             <div class="hero-slide" style="background-image: url('images/Full_pics/2019_peru.jpg');"></div>
@@ -76,9 +59,9 @@
                 <div class="mission-card">
                     <div style="display: flex; align-items: center; gap: 1rem;">
                         <div class="card-icon"><img src="icons/Clipboard_Color.svg" alt="Research Icon" style="width: 48px; height: 48px;"></div>
-                        <h3 style="margin: 0;">Proven in the Field</h3>
+                        <h3 style="margin: 0;">Twenty Years of Field Measurement</h3>
                     </div>
-                    <p>Commercializing sensor network technologies and expertise developed by Dr Wouter Buytaert and his research team at Imperial College London.</p>
+                    <p>Two decades of deployment and continuous field validation ensure our sensors are proven technologies you can trust for critical environmental monitoring applications.</p>
                 </div>
             </div>
         </div>
@@ -110,7 +93,7 @@
                 <a href="sensors.html#water-quality" class="sensor-card water-card">
                     <div style="display: flex; align-items: center; gap: 1rem;">
                         <div class="sensor-icon"><img src="icons/WQ_Bouy.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; "></div>
-                        <h3 style="margin: 0;">Quality Buoy</h3>
+                        <h3 style="margin: 0;">Water Quality</h3>
                     </div>
                     <p>Self-righting buoy monitoring turbidity, temperature, and electrical conductivity</p>
                     <span class="learn-more">Learn more →</span>
@@ -165,36 +148,6 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Riverlabs</h4>
-                    <p>Environmental monitoring solutions from Imperial College London research</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="sensors.html">Sensors</a></li>
-                        <li><a href="science.html">Science</a></li>
-                        <li><a href="consultancy.html">Consultancy</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="https://riverlabs.uk">Website</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Riverlabs Ltd. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 
     <script>
         // Hero slideshow functionality

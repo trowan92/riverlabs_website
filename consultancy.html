@@ -9,29 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo"> <img src="images/riverlabs-logo.svg" alt="Riverlabs" height="60"></a>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="sensors.html">Sensors</a>
-                    <div class="dropdown-content">
-                        <a href="sensors.html#lidar">LiDAR</a>
-                        <a href="sensors.html#ultrasonic">Ultrasonic</a>
-                        <a href="sensors.html#water-quality">Water Quality</a>
-                        <a href="sensors.html#moisture">Moisture</a>
-                    </div>
-                </li>
-                <li><a href="science.html">Science</a></li>
-                <li><a href="consultancy.html" class="active">Consultancy</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </div>
-    </nav>
-
+    
     <section class="page-header">
         <div class="container">
             <span class="page-label">Services</span>
@@ -74,7 +56,7 @@
                 </div>
 
                 <div class="service-card">
-                    <div class="sensor-icon"><img src="icons/graph1-svgrepo-com.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
+                    <div class="sensor-icon"><img src="icons/DataModelling.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
                     <h3>Data Analysis & Modeling</h3>
                     <p>Transform raw sensor data into actionable insights. Our team provides statistical analysis, hydrological modeling, and custom visualizations tailored to your decision-making needs.</p>
                     <ul class="service-list">
@@ -135,7 +117,7 @@
                     <p>Real-time river stage monitoring, rainfall-runoff modeling, and flood early warning systems for urban and rural catchments.</p>
                 </div>
                 <div class="expertise-card">
-                    <div class="sensor-icon"><img src="icons/water-tower-svgrepo-com.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
+                    <div class="sensor-icon"><img src="icons/farmwater.svg" alt="LiDAR Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
                     <h3>Agricultural Water Management</h3>
                     <p>Soil moisture networks, irrigation optimization, and water use efficiency studies for sustainable agriculture.</p>
                 </div>
@@ -155,7 +137,7 @@
                     <p>Water level dynamics, hydroperiod analysis, and restoration monitoring for wetland ecosystems.</p>
                 </div>
                 <div class="expertise-card">
-                    <div class="sensor-icon"><img src="icons/city-block-svgrepo-com.svg" alt="Urban Water Systems Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
+                    <div class="sensor-icon"><img src="icons/urbanwater.svg" alt="Urban Water Systems Icon" style="width: 48px; height: 48px; filter: hue-rotate(200deg) saturate(1.5);"></div>
                     <h3>Urban Water Systems</h3>
                     <p>Stormwater monitoring, green infrastructure performance, and combined sewer overflow tracking.</p>
                 </div>
@@ -296,34 +278,5 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Riverlabs</h4>
-                    <p>Environmental monitoring solutions from Imperial College London research</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="sensors.html">Sensors</a></li>
-                        <li><a href="science.html">Science</a></li>
-                        <li><a href="consultancy.html">Consultancy</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="https://riverlabs.uk">Website</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Riverlabs Ltd. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="footer-section">
                     <h4>Connect</h4>
                     <ul>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="mailto:info@riverlabs.uk">Contact</a></li>
                         <li><a href="#">GitHub</a></li>
                         <li><a href="#">LinkedIn</a></li>
                     </ul>

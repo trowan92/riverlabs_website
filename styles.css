@@ -25,7 +25,7 @@
     
     /* Typography */
     --font-display: 'Karla', sans-serif;
-    --font-mono: 'karla', monospace;
+    --font-mono: 'Space Mono', monospace;
     
     /* Spacing */
     --space-xs: 0.5rem;
@@ -1176,6 +1176,59 @@ a:hover {
     color: var(--neutral-gray);
 }
 
+.partners-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+    margin: var(--space-lg) 0;
+}
+
+.partner-logo-item {
+    padding: var(--space-md);
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-smooth);
+}
+
+.partner-logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(10, 61, 98, 0.15);
+}
+
+.partner-logo-item img {
+    max-width: 180px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: var(--space-sm);
+}
+
+.partner-logo-item p {
+    color: var(--neutral-gray);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.partners-section {
+    padding: var(--space-xl) 0;
+    background: white;
+}
+
+.partners-section .partners-logos {
+    max-width: 1000px;
+    margin: var(--space-lg) auto;
+}
+
+.partners-section .partner-logo-item {
+    padding: var(--space-lg);
+}
+
 .partners-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1189,6 +1242,31 @@ a:hover {
     text-align: center;
     color: var(--neutral-gray);
     font-weight: 600;
+}
+
+.partners-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.partners-list h3 {
+    color: var(--primary-deep);
+    margin: var(--space-md) 0 var(--space-sm) 0;
+    font-size: 1.3rem;
+}
+
+.partners-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.partners-list li {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid rgba(0, 82, 98, 0.1);
+}
+
+.partners-list li:last-child {
+    border-bottom: none;
 }
 
 .partner-note {

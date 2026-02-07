@@ -1,0 +1,39 @@
+Description
+The Riverlabs Wari Ultrasonic Water Level Logger is an automatic logger system using a Maxbotix
+MB7389 sonar sensor. The logger system is based on a low power Atmel microprocessor
+combined with a real-time clock, an internal EEPROM memory of 512 Mbit, and a MicroSD card
+reader.
+The Atmel CPU uses the Arduino bootloader and programmed with an instruction set written in
+the Arduino programming language. Although the default instruction set will be sufficient for most
+uses, it is fully open source, which means that the user can adjust it for specific purposes using the
+freely available Arduino Software IDE, or any compatible system. The programming code and
+instructions are available on the Riverlabs website1
+.
+By default, the water level sensor is programmed to measure distance to the water surface,
+internal temperature, and battery voltage. Measurements are stored in the internal EEPROM
+memory, which is flushed to the SD card at regular intervals or whenever the logger is reset.
+Technical specifications
+Range: 300 mm – 5000 mm
+Resolution (water level): 1 mm
+Resolution (temperature): 0.25°C
+Resolution (voltage): 0.01 V
+Accuracy (water level): ~ 5 mm
+Power: 
+- 1 x 3.7V Lithium ion battery (18650) or –
+1x 3.7V 800mAh Lithium Ion (AA), or 1x
+Options
+2W 6V Solat panel
+3G Data connection
+4G Data connection
+LoRaWan Radio Module
+
+
+
+Battery duration: More than 2 years under typical use (5 min frequency)
+Water resistance: IP67
+
+Code link - https://github.com/ICHydro/Riverlabs
+
+Full codumentation.
+
+

@@ -64,6 +64,22 @@ To add the Riverlabs logo:
    ```
 3. Adjust the height attribute as needed for your logo
 
+## Deploying (S3 + CloudFront)
+
+The live site (www.riverlabs.com) is a static upload to an S3 bucket behind CloudFront — there is no build step.
+After merging to `main`, sync the repo and invalidate the CloudFront cache (CloudFront caches objects for up to a year,
+so without the invalidation the old files keep being served):
+
+```bash
+aws s3 sync . s3://<bucket-name> --exclude ".git/*" --exclude ".DS_Store" --exclude "*/.DS_Store" --exclude ".claude/*" --delete
+aws cloudfront create-invalidation --distribution-id <distribution-id> --paths "/*"
+```
+
+S3 is case-sensitive: file references in HTML must match the filename exactly (e.g. `images/Bouy.png`, not `bouy.png`).
+
+Product datasheets live in `datasheets/`. The LiDAR and Water Quality Buoy sheets are generated from
+`datasheets/build_datasheets.py` (needs Google Chrome); edit the content dicts there and re-run to regenerate.
+
 ## Quick Start
 
 ### Option 1: Deploy to Netlify (Recommended)

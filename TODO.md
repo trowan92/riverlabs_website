@@ -30,7 +30,7 @@ The following changes have been implemented in the website code:
 ### 2. Website Hosting Migration
 **Priority: Future**
 
-- [ ] Once website complete, migrate from Netlify to Amazon Web Services S3 static hosting
+- [x] Migrated from Netlify to AWS S3 + CloudFront (May 2026) — see README "Deploying". Live site still needs re-syncing with `main` and a CloudFront invalidation.
 - [ ] Logo has been updated and added as pull request to River Labs folder
 
 ## Contact Information for Follow-up

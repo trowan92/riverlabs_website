@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbarHTML = `
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo"> <img src="images/riverlabs-logo.svg" alt="Riverlabs" height="60"></a>
+            <a href="index.html" class="logo"> <img src="images/riverlabs-logo.svg" alt="Riverlabs" height="60" class="logo-img"></a>
             <button class="hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
